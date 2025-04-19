@@ -1,8 +1,16 @@
+import 'dart:ui';
+import 'package:flutter/material.dart';
+
 class AlarmInfo {
   DateTime alarmDateTime;
-  String? description; // Make description nullable
-  bool isActive; // Non-nullable boolean
-
-  // Initialize isActive in the constructor
-  AlarmInfo(this.alarmDateTime, {this.description, this.isActive = true});
+  String? description;
+  bool isActive;
+  List<Color>? gradientColors;
+  
+  AlarmInfo(
+    this.alarmDateTime, {
+    this.description,
+    this.gradientColors,
+    this.isActive = false, // default value added
+  });
 }
