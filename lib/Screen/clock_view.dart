@@ -82,7 +82,8 @@ class ClockPainter extends CustomPainter {
       ..strokeWidth = size.width / 30;
 
     var hourHandBrush = Paint()
-      ..shader = const RadialGradient(colors: [ Color.fromARGB(255, 245, 2, 83), Color(0xFFC279FB)])
+      ..shader = const RadialGradient(colors: [ Color.fromARGB(255, 245, 2, 83), Color(
+          0xFF798AFB)])
           .createShader(Rect.fromCircle(center: center, radius: radius))
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round

@@ -35,3 +35,4 @@ class GradientTemplate {
     GradientColors(GradientColors.fire),
   ];
 }
+
