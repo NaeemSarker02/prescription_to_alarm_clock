@@ -1,5 +1,4 @@
-import 'package:prescription_to_alarm_clock/constants/theme_data.dart';
-
+import '../constants/theme_data.dart';
 import '../models/alarm_info.dart';
 import '../models/menu_info.dart';
 import 'enums.dart';
@@ -13,5 +12,5 @@ List<MenuInfo> menuItems = [
 
 List<AlarmInfo> alarms = [
   AlarmInfo( DateTime.now().add(Duration(hours: 1)), description: 'medicine', gradientColors: GradientColors.sky),
-  AlarmInfo( DateTime.now().add(Duration(hours: 2)), description: 'office',  gradientColors: GradientColors.sunset),
+  AlarmInfo( DateTime.now().add(Duration(hours: 2)), description: 'office',  gradientColors:  GradientColors.sunset),
 ];

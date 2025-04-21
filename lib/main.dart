@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Screen/home_screen.dart';
+import 'package:prescription_to_alarm/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,42 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Prescription to Alarm',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const MyHomePage(title: 'Prescription to Alarm'),
+      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
 
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(title),
-      ),
-      body: const Center(
-        child: Text('Welcome to Flutter!'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => HomeScreen()),
-          );
-        },
-        child: const Icon(
-          Icons.keyboard_arrow_right,
-          size: 40,
-        ),
-      ),
-    );
-  }
-}
