@@ -31,9 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               buildMenuButton('Alarm','assets/alarm_icon.png'),
             ],
-            
+
           ),
-         VerticalDivider(
+          VerticalDivider(
             color: Colors.white54,
             width: 1.5,
           ),
@@ -140,13 +140,13 @@ class _HomeScreenState extends State<HomeScreen> {
             MaterialPageRoute(builder: (context) => AlarmScreen()));
       },
       style: TextButton.styleFrom(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(topRight: Radius.circular(8))),
-          padding: const EdgeInsets.symmetric(
-              vertical: 16.2, horizontal: 0),
-          backgroundColor: Color.fromARGB(255, 7, 13, 46),
-          side: BorderSide(color: Colors.black, width: 2),
-         ),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(topRight: Radius.circular(8))),
+        padding: const EdgeInsets.symmetric(
+            vertical: 16.2, horizontal: 0),
+        backgroundColor: Color.fromARGB(255, 7, 13, 46),
+        side: BorderSide(color: Colors.black, width: 2),
+      ),
       child: Column(
         children: [
           Image.asset(
@@ -158,13 +158,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
             title,
             style: TextStyle(
-                 fontFamily: 'avenir',
-                 color: Colors.white, fontSize: 13),
+                fontFamily: 'avenir',
+                color: Colors.white, fontSize: 13),
           ),
         ],
       ),
     );
   }
 }
-
 

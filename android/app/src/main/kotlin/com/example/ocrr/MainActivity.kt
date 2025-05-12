@@ -1,4 +1,4 @@
-package com.example.prescription_to_alarm_clock
+package com.example.ocrr
 
 import io.flutter.embedding.android.FlutterActivity
 
