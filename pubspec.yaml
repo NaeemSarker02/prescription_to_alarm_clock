@@ -1,5 +1,5 @@
-name: prescription_to_alarm
-description: "A new Flutter project."
+name: health_minder
+description: "prescription to alarm"
 publish_to: 'none'
 
 version: 1.0.0+1

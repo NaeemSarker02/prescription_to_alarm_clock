@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Image to Text Converter'),
+        title: const Text('Prescription to alarm'),
       ),
       body: Center(
         child: Column(

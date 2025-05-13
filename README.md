@@ -1,6 +1,6 @@
-# ocrr
+# HealthMinder
 
-A new Flutter project.
+prescription to alarm 
 
 ## Getting Started
 
